@@ -7,7 +7,7 @@ Assignment operators are used to assign values to variables
 def assignment_operator():
     """Assignment operator """
 
-    # Assignment: =
+    # Assignment
     number = 5
     assert number == 5
 
