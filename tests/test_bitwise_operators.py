@@ -1,7 +1,7 @@
 """ Bitwise Operators manipulates a number on bit level. 
 It is mostly used to do low-level programming on Embedded systems """
 
-def bitwise_operators():
+def test_bitwise_operators():
 
     """
      
@@ -59,7 +59,3 @@ def bitwise_operators():
      """
     assert 5 << 1 == 10
     assert 10 << 3 == 80
-
-    
-
-bitwise_operators()

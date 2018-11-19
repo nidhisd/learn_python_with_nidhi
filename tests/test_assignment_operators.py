@@ -4,7 +4,7 @@ Assignment operators are used to assign values to variables
 """
 
 
-def assignment_operator():
+def test_assignment_operator():
     """Assignment operator """
 
     # Assignment
@@ -31,7 +31,7 @@ def assignment_operator():
 
     number = 7
     number /= 2
-    assert number == 3
+    assert number == 3.5
 
     number = 9
     number //= 2
@@ -69,7 +69,3 @@ def assignment_operator():
     number <<= 4   # (5 * (2 ** 4))
     assert number == 48
 
-
-
-
-assignment_operator()

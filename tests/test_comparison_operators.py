@@ -3,7 +3,7 @@
 Comparison operators are used to compare two values
 """
 
-def comparison_operators():
+def test_comparison_operators():
 
     #Equal-to
 
@@ -24,5 +24,3 @@ def comparison_operators():
     assert number > 2
     assert number >= 3
     assert number > 1
-    
-comparison_operators()

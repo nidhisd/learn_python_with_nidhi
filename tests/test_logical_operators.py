@@ -4,7 +4,7 @@ Logical operators are used in conditional statements. It helps combine two condi
 
 """
 
-def logical_operators():
+def test_logical_operators():
 
     number_1 = 10
     number_2 = 20
@@ -20,6 +20,3 @@ def logical_operators():
 #Not
     assert not number_1 == number_2
     assert number_2 != number_1
-
-
-logical_operators()

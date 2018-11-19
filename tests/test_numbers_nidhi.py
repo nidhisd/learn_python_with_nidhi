@@ -17,8 +17,8 @@ def test_numbers():
     x = 523
     assert type(x) is int
 
-    y = 523432534546547657586786786867
-    assert type(y) is long
+    #y = 523432534546547657586786786867
+    #assert type(y) is long
 
     z = 4.6666666
     assert type(z) is float
@@ -36,10 +36,10 @@ def test_int():
     #           -1 ; if x < y
     #            1 ; if x > y
     #            0 ; if x = y
-    
-    assert cmp(3, 8) == -1
-    assert cmp(8, 3) == 1
-    assert cmp(3, 3) == 0
+    # Note: cmp(a,b) does not work in Python 3.
+    #assert cmp(3, 8) == -1
+    #assert cmp(8, 3) == 1
+    #assert cmp(3, 3) == 0
 
     # pow(x,y): x ** y
     
@@ -58,8 +58,3 @@ def test_int():
     assert math.sqrt(16) == 4
     # For many of the mathematical functions to execute we need to import math library in python.
     #Likewise, you can execute several inbuilt mathematical functions from the math library.
-
-
-
-test_numbers()
-test_int()

@@ -9,7 +9,7 @@
 
 """
 
-def membership_operators():
+def test_membership_operators():
 
     x = 1
     y = 5
@@ -21,5 +21,3 @@ def membership_operators():
     #Not in operator
     assert x not in z
 
-
-membership_operators()

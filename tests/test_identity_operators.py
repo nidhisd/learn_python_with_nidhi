@@ -5,7 +5,7 @@
                                        >> type(x) is int
 """
 
-def identity_operators():
+def test_identity_operators():
 
         #Is operator:
         # Returns true if both variables are the same object.
@@ -31,7 +31,4 @@ def identity_operators():
          assert x == y
          # In above example, we can see how 'is' and '==' are different operators. 
          # '==' compares the value of the objects and 'is' compares object at memory level too.
-
-
-identity_operators()
 
