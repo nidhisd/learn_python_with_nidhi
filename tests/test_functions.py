@@ -39,8 +39,3 @@ def test_functions_definitions():
         return func(other_person)
     
     assert person_name(greet_again) == "Hi! Jack"
-
-    
-
-
-
