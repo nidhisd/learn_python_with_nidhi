@@ -1,4 +1,4 @@
-
+import pytest;
 
 def car(name, mileage=120, speed=500, type='electric'):
 
@@ -41,3 +41,32 @@ def test_keyword_argument():
         " This is first electric car in the market."
          )
     assert car('Mercedes', 800) == message
+
+    # In a function call, keyword arguments must follow positional arguments.
+    # All the keyword arguments passed must match one of the arguments
+    # accepted by the function.
+
+    assert car('Mercedes', 800, speed=500) == message
+
+    # No argument may receive a value more than once.
+
+    def function_with_one_parameter(number):
+        return(number)
+    with pytest.raises(Exception):
+        function_with_one_parameter(0, number=0)
+
+    # When a final formal parameter of the form **name is present, it receives
+    # a dictionary containing all keyword arguments except for those correspon
+    # ding to a formal parameter.This may be combined with a formal parameter 
+    # of the form *name which receives a tuple containing the positional argum
+    # ents beyond the formal parameter list. (*name must occur before **name.)
+
+    def test_function(first_paramater, *arguments, **keywords):
+                assert first_paramater == 'First'
+                assert arguments == ('second', 'third')
+                assert keywords == {
+                              'fourth': '4',
+                              'fifth': '5'
+                                }
+
+    test_function('First', 'second', 'third', fourth='4', fifth='5')
