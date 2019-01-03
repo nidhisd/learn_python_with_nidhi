@@ -152,7 +152,7 @@ def test_list_comprehensions():
     vector = [-4, -3, -2, -1, 0, 1, 2, 3, 4]
 
     # Doubling the vector
-    doubled_vector = [ x * 2 for x in vector]
+    doubled_vector = [x * 2 for x in vector]
     assert doubled_vector == [-8, -6, -4, -2, 0, 2, 4, 6, 8]
 
     # Filtering +ves
@@ -172,7 +172,7 @@ def test_list_comprehensions():
     # Here I am creating a tuple:
     squaring = [(x, x ** 2) for x in range(10)]
     assert squaring == [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25),
-                    [(6, 36), (7, 49), (8, 64), (9, 81)]
+                        (6, 36), (7, 49), (8, 64), (9, 81)]
 
     # Flattening a list using two for's
     vector = [[1, 2, 3], [4, 5, 6]]
