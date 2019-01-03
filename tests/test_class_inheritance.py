@@ -40,7 +40,11 @@ def test_inheritance():
 
     assert person.get_name() == 'Henry'
     assert employee.get_name() == 'Joseph'
+<<<<<<< HEAD
     assert employee.get_full_id() == 'Joseph, J23'
+=======
+    assert employee.get_full_id() == 'Joseph, A23'
+>>>>>>> 6fb22d7a9eb3c401b35578f9703c3e06f9cb4974
 
     assert isinstance(employee, Employee)
     assert not isinstance(person, Employee)

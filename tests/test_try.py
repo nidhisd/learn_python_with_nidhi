@@ -4,20 +4,20 @@ def test_try():
 
     exception_occured = False
 
-    # The try block will generate an error, because variable below is not defined:
+    # The try block will generate an error, because variable below is not def:
     try:
         print(variable_that_does_not_exist)
     except NameError:
         exception_occured = True
     assert exception_occured
 
-    #Try with error message:
+    # Try with error message:
 
     try:
         print(variable_that_is_not_defined)
     except NameError:
         exception_message = "Exception has occured!"
-    
+
     assert exception_message == "Exception has occured!"
 
     # You can use the else keyword to define a block of code to be executed
@@ -34,7 +34,7 @@ def test_try():
 
     assert message == 'Success.Nothing went wrong.'
 
-    #Try with Finally:
+    # Try with Finally:
     message = ''
 
     try:
@@ -45,8 +45,3 @@ def test_try():
         message += 'Nothing went wrong.'
     finally:
         message += 'Nothing went wrong.'
-
-
-
-
-    
